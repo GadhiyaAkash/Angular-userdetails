@@ -1,0 +1,76 @@
+.avatar {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.selected {
+    background-color:#dbf4d2;
+    color:black;
+}
+
+.users-lists {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.title-tg {
+    padding: 25px 0;
+}
+
+.title-tg h3 {
+    font-size: 22px;
+    color: #199ae7;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0;
+}
+
+.title-tg .fa {
+    float: right;
+    color: #199ae7;
+    font-size: 22px;
+    margin-top: 2px;
+}
+
+.select-cancel-btn {
+    float: right;
+    margin-top: 15px;
+}
+
+.select-cancel-btn .btn {
+    border-radius: 0;
+}
+
+.select-cancel-btn .btn.btn-info {
+    background: white; 
+    color: black; 
+    border: 1px solid #aeaeae;
+}
+
+.name-cnt {
+    padding-left: 15px;
+}
+
+.search-br {
+    position: relative;
+}
+
+.search-br input{
+    border-radius: 0;
+}
+
+.search-br .fa {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    background: #199ae7; 
+    color: white; 
+    padding: 11px;
+    cursor: pointer;
+}
+
+.t-center {
+    text-align: center;
+    margin-top: 25%;
+    transform: translate(0, -50%);
+}

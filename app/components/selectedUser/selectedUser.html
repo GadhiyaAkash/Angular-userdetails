@@ -1,0 +1,18 @@
+<div class="container">
+        <div class="title-tg">
+                <h3>SELECT USERS</h3>
+                <a ui-sref="dashboard"><i class="fa fa-times-circle-o"></i></span></a>
+            </div>
+    <ul class="list-group">
+        <li class="list-group-item" data-ng-repeat="user in $ctrl.selectedUsers">
+            <img class="avatar" data-ng-src="{{ user.avatar }}" alt="{{ user.full_name }}"/>
+            <span data-ng-bind="user.full_name" class="name-cnt"></span>
+        </li>
+        <li class="list-group-item" data-ng-if="!$ctrl.selectedUsers.length">
+        	<span>You have not selected anything.</span>
+        </li>
+    </ul>
+    <div class="select-cancel-btn">
+            <button type="button" data-ng-click="$ctrl.backToUser()" class="btn btn-info">Back</button>
+    </div>
+</div>

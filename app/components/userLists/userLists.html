@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="title-tg">
+        <h3>SELECT USERS</h3>
+        <a ui-sref="dashboard"><i class="fa fa-times-circle-o"></i></a>
+    </div>
+    <div class="search-br">
+        <input ng-model="searchUser" class="form-control" id="myInput" type="text" placeholder="Search..">
+        <i class="fa fa-search"></i>
+    </div>
+    <br>
+    <div class="users-lists">
+        <ul class="list-group">
+        <li class="list-group-item" data-ng-repeat="user in $ctrl.users | filter : searchUser" data-ng-class="{ 'selected': user.selected }" data-ng-click="$ctrl.selectedUser(user)">
+            <img class="avatar" data-ng-src="{{ user.avatar }}" alt="{{ user.full_name }}"/>
+            <span data-ng-bind="user.full_name" class="name-cnt"></span>
+        </li>
+        </ul>    
+    </div>
+    <div class="select-cancel-btn">
+        <button type="button" class="btn btn-info" data-ng-click="$ctrl.backToHome()">Cancel</button>
+        <button type="button" class="btn btn-success" data-ng-click="$ctrl.selectUser()">Select</button>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html data-ng-app="myApp">
+  <head>
+		<title>Angular Demo</title>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<link rel="shortcut icon" type="image/png" href="favicon.ico">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="app/styles/user.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script data-require="lodash.js@*" data-semver="3.1.0" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.1.0/lodash.min.js"></script>
+
+		
+		<script src="http://code.angularjs.org/1.5.11/angular.min.js"></script>
+		<script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+
+		<!-- Start loads services and module files -->
+		<script src="app/common/user.service.js"></script>
+		<script src="app/components/app.js"></script>
+		<!-- Ends loads -->
+
+		<!-- Starts components -->
+		<script src="app/components/dashboard/dashboard.component.js"></script>
+		<script src="app/components/selectedUser/selectedUser.component.js"></script>
+		<script src="app/components/userLists/userLists.component.js"></script>
+		<!-- Ends components -->
+	</head>
+	<body>
+	  	<div class="user-select-list-td">
+				<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT -->
+				<div class="col-md-8 offset-md-2">
+					<ui-view></ui-view>
+				</div>
+	    </div>
+	</body>
+</html>
