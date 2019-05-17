@@ -9,7 +9,7 @@
 	i) Windows
 		- https://www.cloudways.com/blog/configure-virtual-host-on-windows-10-for-wordpress/
 
-	ii) Ubentu
+	ii) Ubuntu
 		- https://ourcodeworld.com/articles/read/302/how-to-setup-a-virtual-host-locally-with-xampp-in-ubuntu
 
 2) Copy & paste domain name in URL
